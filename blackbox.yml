@@ -1,0 +1,10 @@
+modules:
+  http_2xx:
+    type: http
+    valid_http_versions: [ " " ]
+    valid_http_methods: [ "GET" ]
+    timeout: 5s
+    headers:
+      User-Agent: Blackbox Exporter
+    body: ""
+    expected_http_statusCodes: ["200"]
